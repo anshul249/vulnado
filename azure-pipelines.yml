@@ -25,6 +25,6 @@ stages:
       
       - script: |
           pip install truffleHog
-          trufflehog --json file:// $(System.DefaultWorkingDirectory)
+          trufflehog file:///$(System.DefaultWorkingDirectory)
           ls -la
         displayName: Install TruffleHog
